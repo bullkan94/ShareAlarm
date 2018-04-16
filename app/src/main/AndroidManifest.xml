@@ -28,7 +28,7 @@
                 <action android:name="android.intent.action.VIEW"/>
                 <category android:name="android.intent.category.DEFAULT"/>
                 <category android:name="android.intent.category.BROWSABLE"/>
-                <data android:scheme="sharedalarm" android:host="addalarm"/>
+                <data android:scheme="sharealarm" android:host="addalarm"/>
             </intent-filter>
 
             <intent-filter>

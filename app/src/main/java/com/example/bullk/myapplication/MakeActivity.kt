@@ -88,8 +88,10 @@ class MakeActivity : AppCompatActivity() {
                 }
             }
 
+
             //TODO : Database error check
 
+            mAlarmIntent.putExtra("requestCode", requestCode)
             val mPendingIntent = PendingIntent.getActivity(
                     this,
                     requestCode,
@@ -126,6 +128,8 @@ class MakeActivity : AppCompatActivity() {
             }
 
             Toast.makeText(this, "알람이 생성 되었습니다", Toast.LENGTH_SHORT).show()
+
+            setResult(1)
 
             this.finish()
         }
